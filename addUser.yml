@@ -12,3 +12,4 @@
           - user: biljana
             role: member
             target_team: team_org
+            organization: org1
