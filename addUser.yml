@@ -4,8 +4,10 @@
   gather_facts: false
 
   tasks:
-    - name: Assign team member role
-      infra.aap_configuration.dispatch:
+    - name: Run the main configuration role
+      ansible.builtin.include_role:
+        name: infra.aap_configuration.dispatch
+      vars:
         controller_roles:
           - user: biljana
             role: member
