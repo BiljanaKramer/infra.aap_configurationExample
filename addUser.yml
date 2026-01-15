@@ -4,12 +4,11 @@
   gather_facts: false
 
   collections:
-    - name: ansible.platform
-    - name: ansible.hub
-    - name: ansible.controller
-      version: ">=4.6.0"
-    - name: ansible.eda
-    - name: infra.aap_configuration
+    ansible.platform
+    ansible.hub
+    ansible.controller
+    ansible.eda
+    infra.aap_configuration
 
   tasks:
     - name: Assign team member role
