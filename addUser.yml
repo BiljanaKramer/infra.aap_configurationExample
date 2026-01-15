@@ -11,4 +11,4 @@
         controller_roles:
           - user: biljana
             role: member
-            team: my_team
+            target_team: my_team
