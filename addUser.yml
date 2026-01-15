@@ -3,13 +3,6 @@
   hosts: localhost
   gather_facts: false
 
-  collections:
-    ansible.platform
-    ansible.hub
-    ansible.controller
-    ansible.eda
-    infra.aap_configuration
-
   tasks:
     - name: Assign team member role
       infra.aap_configuration.dispatch:
