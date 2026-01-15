@@ -5,6 +5,7 @@
 
   collections:
     - infra.aap_configuration
+      version: ">=4.0.0"
 
   tasks:
     - name: Assign team member role
