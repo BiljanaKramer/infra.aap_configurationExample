@@ -1,0 +1,16 @@
+---
+- name: Add user to team as member
+  hosts: localhost
+  gather_facts: false
+
+  collections:
+    - infra.aap_configuration
+
+  tasks:
+    - name: Assign team member role
+      infra.aap_configuration.dispatch:
+        controller_roles:
+          - user: biljana
+            role: member
+            team: my_team
+            organization: Default
