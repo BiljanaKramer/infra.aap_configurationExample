@@ -9,8 +9,7 @@
     - name: ansible.controller
       version: ">=4.6.0"
     - name: ansible.eda
-    - infra.aap_configuration
-      version: ">=4.0.0"
+    - name: infra.aap_configuration
 
   tasks:
     - name: Assign team member role
