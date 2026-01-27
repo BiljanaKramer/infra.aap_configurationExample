@@ -4,6 +4,8 @@
   gather_facts: false
 
   tasks:
+    - pause:
+        minutes: 10
     - name: Run the main configuration role
       ansible.builtin.include_role:
         name: infra.aap_configuration.dispatch
